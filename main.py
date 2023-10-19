@@ -23,4 +23,4 @@ async def home(request: Request):
 if __name__ == "__main__":
     import uvicorn
     port = os.environ.get("PORT", 8080)
-    uvicorn.run(app, host="localhost", port=int(port))
+    uvicorn.run(app, host="0.0.0.0", port=int(port))
