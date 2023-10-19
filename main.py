@@ -19,7 +19,7 @@ async def home(request: Request):
     # Render the landing page template
     return templates.TemplateResponse("landing.html", {"request": request})
 
-# Run the FastAPI application using the built-in development server
+# Run the FastAPI application using the built-in development server.
 if __name__ == "__main__":
     import uvicorn
     port = os.environ.get("PORT", 8080)
