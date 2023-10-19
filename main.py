@@ -22,4 +22,5 @@ async def home(request: Request):
 # Run the FastAPI application using the built-in development server
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="localhost", port=8000)
+    port = os.environ.get("PORT", 8080)
+    uvicorn.run(app, host="localhost", port=int(port))
